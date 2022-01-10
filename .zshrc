@@ -94,8 +94,12 @@ source $ZSH/oh-my-zsh.sh
 # Autojump plugin
 [[ -s /Users/jiayin/.autojump/etc/profile.d/autojump.sh ]] && source /Users/jiayin/.autojump/etc/profile.d/autojump.sh
 
+# nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
 # NodeJs
-export PATH="/usr/local/opt/node@12/bin:$PATH"
+# export PATH="/usr/local/opt/node@12/bin:$PATH"
 
 # Setup my script
 export PATH="/Users/jiayin/script:$PATH"
@@ -134,3 +138,5 @@ alias cp="cp -i"
 alias mv="mv -i"
 alias a="nvim ~/.config/nvim/init.vim"
 alias z="nvim ~/.zshrc"
+alias t="tmux"
+alias ls="exa --icons --all --git --long --header"
